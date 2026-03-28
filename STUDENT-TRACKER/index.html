@@ -4,23 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Study Dashboard</title>
-
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
 <div class="container">
-
     <h1>📊 Smart Study Dashboard</h1>
-
-    <!-- Input Section -->
     <div class="input-section">
         <input type="text" id="taskInput" placeholder="Enter task..." onkeypress="if(event.key==='Enter') addTask()">
         <input type="date" id="deadline">
@@ -31,24 +21,15 @@
         </select>
         <button onclick="addTask()">Add</button>
     </div>
-
-    <!-- Stats -->
     <div class="stats">
         <p>Total: <span id="totalTasks">0</span></p>
         <p>Done: <span id="completedTasks">0</span></p>
     </div>
-
-    <!-- Progress -->
     <div class="progress-bar">
         <div id="progress"></div>
     </div>
-
-    <!-- Chart -->
     <canvas id="taskChart"></canvas>
-
-    <!-- Task List -->
     <ul id="taskList"></ul>
-
 </div>
 
 <script src="script.js"></script>
